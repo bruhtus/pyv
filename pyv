@@ -1,5 +1,5 @@
 # default python environment is in ~/.cache/pyv
-# change PYV_DIR env variable below if you want to move it else where
+# change PYV_DIR env variable below if you want to move it elsewhere
 [ -z $PYV_DIR ] && export PYV_DIR=$HOME/.cache/pyv
 
 # python virtual env alias
