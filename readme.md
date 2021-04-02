@@ -17,13 +17,9 @@ Pyv command is much shorter than default python venv, here's a list of the comma
 - `pde` (you can think it as abbrivation for "pyv deactivate environment")
 - `pve` (you can think it as abbrivation for "pyv view-list environment")
 
-> More details is in usage section
-
 #### Git Repo Name as Python Venv Name
 
-If you're to lazy to give a name to every python venv you created like myself, then you can use the git repo name as your python venv.
-
-> More details is in usage section.
+If you're to lazy to give a name to every python venv you created (like myself), then you can use the git repo name as your python venv.
 
 #### Familiar Shell Command
 
