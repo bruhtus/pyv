@@ -19,7 +19,7 @@ Pyv command is much shorter than default python venv, here's a list of the comma
 
 #### Git Repo Name as Python Venv Name
 
-If you're to lazy to give a name to every python venv you created (like myself), then you can use the git repo name as your python venv.
+If you're to lazy to give a name to every python venv you created (like myself), then you can use the git repo name as your python venv name.
 
 #### Familiar Shell Command
 
