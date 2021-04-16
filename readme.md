@@ -27,6 +27,10 @@ Pyv goal is to be a minimalist approach to manage python venv, so you only need 
 
 > Please keep in mind that i only test this in ZSH and BASH, that's why i'm using "POSIX compliant shell" term because i'm not sure how it will behave in non POSIX compliant shell.
 
+#### Decoupled From Project Directory
+
+You don't need to be in specific project directory to access python virtual environment, all you need to do is give pyv the name of virtual environment you want to access.
+
 ### Setup
 
 Pyv is so simple that honestly you don't really need an installer, but i might provide the installer in the future.
