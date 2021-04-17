@@ -1,4 +1,5 @@
-## Pyv: Minimalist Python Venv Management Decoupled From Project Directory
+## Pyv: Minimalist Python Venv Management Tool
+### (Decoupled From Project Directory)
 
 Pyv is a simple shell function that let you make default python virtual environment (venv) management decoupled from project directory. If you ever use conda (anaconda/miniconda), pyv is similar to how conda manage python virtual environment but without python version management. So, please keep in mind that pyv only manage python virtual environment and do not manage your version of python you use.
 
