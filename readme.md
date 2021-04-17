@@ -1,6 +1,6 @@
 ## Pyv: Minimalist Python Venv Management Tool
 
-Pyv is a simple shell function that let you make default python virtual environment (venv) management decoupled from project directory. If you ever use conda (anaconda/miniconda), pyv is similar to how conda manage python virtual environment but without python version management. So, please keep in mind that pyv only manage python virtual environment and do not manage your version of python you use.
+Pyv is a simple shell function that let you make default python virtual environment (venv) decoupled from project directory. If you ever use conda (anaconda/miniconda), pyv is similar to how conda manage python virtual environment but without python version management. So, please keep in mind that pyv only manage python virtual environment and do not manage your version of python you use.
 
 To make it simpler, pyv is a wrapper around default python venv command `python -m venv` that move the virtual environment directory into `$PYV_DIR`. By default `$PYV_DIR` is `~/.cache/pyv`, you can change that by adding `export PYV_DIR=$HOME/directory/you/want` to your shell config or `.profile`, or you can edit the `pyv` file directly.
 
