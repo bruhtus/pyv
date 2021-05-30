@@ -37,6 +37,11 @@ Pyv is so simple that honestly you don't really need an installer, but i might p
 
 First of all, you can clone the repo to your local machine or you can download only the `pyv` file and place it anywhere you want. After that, add `source the/pyv-file/path/pyv` in your shell config such as zshrc or bashrc or something else.
 
+Download only pyv file:
+```sh
+wget https://raw.githubusercontent.com/bruhtus/pyv/master/pyv
+```
+
 Example: <br>
 I place the pyv file in `~/.config/zsh` directory, and because i use ZSH then i need to add `source ~/.config/zsh/pyv` to my ZSH config or `.zshrc`.
 
