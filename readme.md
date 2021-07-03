@@ -39,7 +39,7 @@ First of all, you can clone the repo to your local machine or you can download o
 
 Download only pyv file:
 ```sh
-wget https://raw.githubusercontent.com/bruhtus/pyv/master/pyv
+wget https://raw.githubusercontent.com/bruhtus/pyv/master/pyv -P /preferred/location
 ```
 
 Example: <br>
