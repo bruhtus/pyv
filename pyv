@@ -2,10 +2,13 @@
 # change PYV_DIR env variable below if you want to move it elsewhere
 [ -z $PYV_DIR ] && export PYV_DIR=$HOME/.cache/pyv
 
-# python virtual env alias
-alias \
-	pde='deactivate' \
-	pve='ls -l $PYV_DIR 2> /dev/null || echo "No python virtual env ever created"'
+# python virtual env deactivate alias
+alias pde='deactivate'
+
+# list python virtual env
+function pve(){
+	ls -l $PYV_DIR | awk '{print $9}' 2> /dev/null || echo 'No python virtual env ever created'
+}
 
 # create python virtual env
 function pce(){
