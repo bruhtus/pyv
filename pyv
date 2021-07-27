@@ -7,7 +7,7 @@ alias pde='deactivate'
 
 # list python virtual env
 function pve(){
-	/bin/ls -l $PYV_DIR | awk '{print $9}' 2> /dev/null || echo 'No python virtual env ever created'
+	\ls -l $PYV_DIR | awk '{print $9}' 2> /dev/null || echo 'No python virtual env ever created'
 }
 
 # create python virtual env
@@ -41,11 +41,11 @@ function pre(){
 	local projectdir="${gitroot##*/}"
 
 	if [ "$1" != "" ]; then
-		/bin/rm -r $PYV_DIR/$1 2> /dev/null || \
+		\rm -r $PYV_DIR/$1 2> /dev/null || \
 		echo "No python virtual environment match, nothing deleted"
 
 	elif [ "$projectdir" != "" ]; then
-		/bin/rm -r $PYV_DIR/$projectdir 2> /dev/null || \
+		\rm -r $PYV_DIR/$projectdir 2> /dev/null || \
 		echo "No python virtual environment match, nothing deleted"
 
 	else
