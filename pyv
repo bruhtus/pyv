@@ -30,7 +30,7 @@ function pce(){
 		}
 
 	else
-		echo "Not git repo, please insert a name for virtual env (for example: pce nganu)"
+		echo "Not git repo, please insert a name for virtual env (for example: pce something-big)"
 
 	fi
 }
@@ -41,11 +41,11 @@ function pre(){
 	local projectdir="${gitroot##*/}"
 
 	if [ "$1" != "" ]; then
-		\rm -r $PYV_DIR/$1 2> /dev/null || \
+		\rm -r "$PYV_DIR/$1" 2> /dev/null && echo "$1 python virtual environment deleted" || \
 		echo "No python virtual environment match, nothing deleted"
 
 	elif [ "$projectdir" != "" ]; then
-		\rm -r $PYV_DIR/$projectdir 2> /dev/null || \
+		\rm -r "$PYV_DIR/$projectdir" 2> /dev/null && echo "$projectdir python virutal environment deleted" || \
 		echo "No python virtual environment match, nothing deleted"
 
 	else
@@ -60,10 +60,12 @@ function pae(){
 	local projectdir="${gitroot##*/}"
 
 	if [ "$1" != "" ]; then
-		source $PYV_DIR/$1/bin/activate 2> /dev/null || echo "Python virtual environment not found, create new one"
+		source "$PYV_DIR/$1/bin/activate" 2> /dev/null && echo "$1 python virtual environment activated" || \
+			echo "Python virtual environment not found, create new one"
 
 	else
-		source $PYV_DIR/$projectdir/bin/activate 2> /dev/null || echo "Python virtual environment not found, create new one"
+		source "$PYV_DIR/$projectdir/bin/activate" 2> /dev/null && echo "$projectdir python virtual environment activated" || \
+			echo "Python virtual environment not found, create new one"
 
 	fi
 }
