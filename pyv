@@ -70,4 +70,4 @@ function pae(){
 	fi
 }
 
-# vim:ft=sh
+# vim:ft=sh ts=2 sw=2
