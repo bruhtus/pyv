@@ -6,12 +6,12 @@
 alias pde='deactivate'
 
 # list python virtual env
-function pve(){
+pve() {
 	\ls -l $PYV_DIR | awk '{print $9}' 2> /dev/null || echo 'No python virtual env ever created'
 }
 
 # create python virtual env
-function pce(){
+pce() {
 	local gitroot="$(git rev-parse --show-toplevel 2> /dev/null)"
 	local projectdir="${gitroot##*/}"
 
@@ -36,7 +36,7 @@ function pce(){
 }
 
 # remove python virtual env
-function pre(){
+pre() {
 	local gitroot="$(git rev-parse --show-toplevel 2> /dev/null)"
 	local projectdir="${gitroot##*/}"
 
@@ -55,7 +55,7 @@ function pre(){
 }
 
 # activate python virtual env
-function pae(){
+pae() {
 	local gitroot="$(git rev-parse --show-toplevel 2> /dev/null)"
 	local projectdir="${gitroot##*/}"
 
